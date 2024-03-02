@@ -6,13 +6,146 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Top 3 Sites da Web</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header , footer{
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        input[type="date"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 3px solid #ffffff;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        input[type="email"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 3px solid #ffffff;
+            width: 200px;
+            margin-bottom: 10px;
+            
+        }
+        input[type="password"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 3px solid #ffffff;
+            width: 200px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+        }
+        .header-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .header-buttons a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #555;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        .header-buttons a:hover {
+            background-color: #777;
+        }
+    </style>
 </head>
 <body>
-    <h1>João Azevedo</h1>
-    <h3>Programador</h3>
-    <h4>Olá eu sou o João tenho 19 anos e nasci em Guimarães</h4>
-    <p>Vim de um curso de artes e joguei andebol 7 anos, conseguindo alcançar varios objetivos a nivel regional e nacional.</p>
-    <p>Posteriormente com o final do 12º ano decidi vir morar para o Porto e estudar num curso de VideoJogos. Vindo de um curso de artes pensei que seria natural continuar como ilustrador, mas depois de experimentar programar escolhi que seria um novo objetivo virar programador.</p>
-    <img src="https://img.freepik.com/premium-photo/cat-with-thumbs-up-giving-thumbs-up_910054-26100.jpg">
+<header>
+    <h1>Confia, Sem Compromisso</h1>
+    <div class="header-buttons">
+        <a onclick="scrollToSection('about')">About Me</a>
+        <a onclick="scrollToSection('contact')">Contact</a>
+        <a onclick="scrollToSection('purchase')">Informações do Scam</a>
+    </div>
+</header>
+<div class="container">
+    <h1 id="about">Remedio Para MATAR a Sede!</h1>
+    <p>Novo remedio foi criado pelo genial e magnifico bruxo de Fafe o Homem é simplesmente incrivel ele e a sua macumba.</p>
+    <table>
+        <thead>
+        <tr>
+            <th>Produtos</th>
+            <th>Especificações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>AntiSede</td>
+            <td>basta tomar com um copo de agua.</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2 id="contact">Contactos</h2>
+    <p>Os contactos aqui da firma sao um bocado limitados aceitamos fax, mbway com mensagem ou no telegram.</p>
+    
+    <h2 id="purchase">Compra</h2>
+    <p>Para comprar legit mesmo. Basta colocar o email, password e escolher a cor preferida.</p>
+    <label for="cor">Escolha uma cor:</label>
+    <input type="color" id="cor" name="cor">
+    <label for="data">Selecione uma data:</label>
+    <input type="date" id="data" name="data">
+    <p></p>
+    <label for="email">Endereço de e-mail:</label>
+    <input type="email" id="email" name="email">
+    <p></p>
+    <label for="senha">Password:</label>
+    <input type="password" id="senha" name="senha">
+    <p></p>
+    <audio controls>
+        <source src="https://codeskulptor-demos.commondatastorage.googleapis.com/descent/Zombie.mp3" type="audio/mpeg">
+        
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <p></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZUlxOSQMpZY"  allowfullscreen></iframe>
+</div>
+<footer>
+    <p>Todos os direitos reservados a mim :)</p>
+</footer>
+
+<script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
 </body>
 </html>
