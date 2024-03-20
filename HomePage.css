@@ -149,3 +149,23 @@ div{
 #purchaseText{
     padding-bottom: 40px;
 }
+a{
+    background-color: azure;
+    color: azure;
+}
+
+#Header{
+    background-color: #ccddff;
+    color: #002b80;
+    font-weight: bold;
+}
+#Header1{
+    background-color: #ccddff;
+    color: #002b80;
+    font-weight: bold;
+}
+#Header2{
+    background-color: #ccddff;
+    color: #002b80;
+    font-weight: bold;
+}
