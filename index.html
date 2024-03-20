@@ -21,7 +21,7 @@
 <div class="container">
     <h1 id="about">Remedio Para MATAR a Sede!</h1>
     <p>Novo remedio foi criado pelo genial e magnifico bruxo de Fafe o Homem é simplesmente incrivel ele e a sua macumba.</p>
-    <table>
+    <table id="tabela">
         <thead>
         <tr>
             <th>Produtos</th>
@@ -39,19 +39,24 @@
     <p>Os contactos aqui da firma sao um bocado limitados aceitamos fax, mbway com mensagem ou no telegram.</p>
     
     <h2 id="purchase">Compra</h2>
-    <p>Para comprar legit mesmo. Basta colocar o email, password e escolher a cor preferida.</p>
+    <p id="purchaseText">Para comprar legit mesmo. Basta colocar o email, password e escolher a cor preferida.</p>
     <label for="cor">Escolha uma cor preferida:</label>
     <input type="color" id="cor" name="cor">
     <p></p>
     
+    <div class="input-container">
     <label for="data">Selecione uma data:</label>
     <input type="date" id="data" name="data">
-    <p></p>
-    <label for="email">Endereço de e-mail:</label>
-    <input type="email" id="email" name="email">
-    <p></p>
-    <label for="senha">Password:</label>
-    <input type="password" id="senha" name="senha">
+    </div>
+    <div class="input-container">
+        <label for="email">Endereço de e-mail:</label>
+        <input type="email" id="email" name="email">
+    </div>
+
+    <div class="input-container">
+        <label for="senha">Password:</label>
+        <input type="password" id="senha" name="senha">
+    </div>
     <p></p>
     
     <audio controls>

@@ -1,13 +1,13 @@
 
 body {
-    background-color: #f0f0f0;
+    background-color: #ccddff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 header , footer{
-    background-color: #333;
-    color: #fff;
+    background-color: #0044cc;
+    color: #f0f0f0;
     padding: 20px;
     text-align: center;
 }
@@ -17,19 +17,28 @@ header , footer{
     padding: 20px;
 }
 h1 {
-    font-size: 36px;
+    color: #e6eeff;
+    position: relative;
+    font-size: 65px;
+}
+#about{
+    color: #002b80;
 }
 h2 {
+    color: #002b80;
     font-size: 24px;
+    font-weight: bold;
 }
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    
 }
 th, td {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 3px solid #002b80;
+    
 }
 input[type="date"] {
     padding: 8px;
@@ -94,10 +103,6 @@ h1::before {
     transition: transform .3s ease;
 }
 
-h1 {
-    position: relative;
-    font-size: 65px;
-}
 
 html {
     block-size: 100%;
@@ -131,4 +136,16 @@ label{
 }
 p{
     padding-bottom: 8px;
+    font-weight: bold;
+    
+}
+
+div{
+    padding-bottom: 20px;
+}
+#contact{
+    padding-top: 40px;
+}
+#purchaseText{
+    padding-bottom: 40px;
 }
