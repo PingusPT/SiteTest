@@ -143,6 +143,10 @@ a{
 
 @media only screen and  (max-width: 600px) {
     
+    h1{
+        font-size: 60px;
+    }
+    
     body{
         grid-auto-flow: inherit;
         box-sizing: border-box;
@@ -201,7 +205,7 @@ a{
         margin-top: 40px;
         text-decoration: none;
         color: #ccddff;
-        background-color: #752c2c;
+        background-color: #2c5775;
 
         padding: 10px 20px;
         border-radius: 4px;
